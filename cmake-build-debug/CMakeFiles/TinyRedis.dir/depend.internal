@@ -3,3 +3,7 @@
 
 CMakeFiles/TinyRedis.dir/main.cpp.o
  /Users/wangxy/Documents/TinyRedis/main.cpp
+ /Users/wangxy/Documents/TinyRedis/sds.h
+CMakeFiles/TinyRedis.dir/sds.cpp.o
+ /Users/wangxy/Documents/TinyRedis/sds.cpp
+ /Users/wangxy/Documents/TinyRedis/sds.h

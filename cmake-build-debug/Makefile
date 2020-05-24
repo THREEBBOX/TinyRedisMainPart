@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named sds
+
+# Build rule for target.
+sds: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sds
+.PHONY : sds
+
+# fast build rule for target.
+sds/fast:
+	$(MAKE) -f CMakeFiles/sds.dir/build.make CMakeFiles/sds.dir/build
+.PHONY : sds/fast
+
+#=============================================================================
 # Target rules for targets named TinyRedis
 
 # Build rule for target.
@@ -150,6 +163,36 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/TinyRedis.dir/build.make CMakeFiles/TinyRedis.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+sds.o: sds.cpp.o
+
+.PHONY : sds.o
+
+# target to build an object file
+sds.cpp.o:
+	$(MAKE) -f CMakeFiles/sds.dir/build.make CMakeFiles/sds.dir/sds.cpp.o
+	$(MAKE) -f CMakeFiles/TinyRedis.dir/build.make CMakeFiles/TinyRedis.dir/sds.cpp.o
+.PHONY : sds.cpp.o
+
+sds.i: sds.cpp.i
+
+.PHONY : sds.i
+
+# target to preprocess a source file
+sds.cpp.i:
+	$(MAKE) -f CMakeFiles/sds.dir/build.make CMakeFiles/sds.dir/sds.cpp.i
+	$(MAKE) -f CMakeFiles/TinyRedis.dir/build.make CMakeFiles/TinyRedis.dir/sds.cpp.i
+.PHONY : sds.cpp.i
+
+sds.s: sds.cpp.s
+
+.PHONY : sds.s
+
+# target to generate assembly for a file
+sds.cpp.s:
+	$(MAKE) -f CMakeFiles/sds.dir/build.make CMakeFiles/sds.dir/sds.cpp.s
+	$(MAKE) -f CMakeFiles/TinyRedis.dir/build.make CMakeFiles/TinyRedis.dir/sds.cpp.s
+.PHONY : sds.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -158,10 +201,14 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... sds"
 	@echo "... TinyRedis"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... sds.o"
+	@echo "... sds.i"
+	@echo "... sds.s"
 .PHONY : help
 
 

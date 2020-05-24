@@ -6,47 +6,43 @@
 #define TINYREDIS_SDS_H
 
 #include <iostream>
-#include <string>s
+#include <string>
+#include <ostream>
 
 using namespace std;
 
 class sdshr {
+    friend ostream &operator<<(ostream &os, const sdshr &sds);
 
 public:
     sdshr() = delete;
 
-    explicit sdshr(int length);
+    explicit sdshr(int length);//initial empty_buf sdshr
 
-    sdshr(int length, string content);
+    sdshr(int length, string content);//initial buf with existing content
 
-    explicit sdshr(string content);
+    explicit sdshr(string content);//initial buf with content;
 
-    int length() const;
+    int sdsavail() const;//获得可用长度
 
-    int print() const;
+    int sdslen() const;//获得已经使用字节数
 
-    int unused()const;
+    void sdsfree();//释放数据
 
-    ~sdshr() = default;
+    void sdsclear();//清空数据
+
+    sdshr* sdsdup(const sdshr& sds);//创建副本
+
+    ~sdshr();
 
 private:
+    void empty_buf();
+
     int len;//the length of the buf
     char *buf;
     int free;//unused memory
 
 };
-
-sdshr::sdshr(int length) : len(length) {
-    buf = new char[length + 1];
-    buf[0] = '\0';
-    free = len;
-}
-
-sdshr::sdshr(string content) {
-    len = content.length();
-    buf = new char[len + 1];
-    strcpy(string)
-}
 
 
 #endif //TINYREDIS_SDS_H

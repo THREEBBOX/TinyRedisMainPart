@@ -1,3 +1,4 @@
 /Users/wangxy/Documents/TinyRedis/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /Users/wangxy/Documents/TinyRedis/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/wangxy/Documents/TinyRedis/cmake-build-debug/CMakeFiles/sds.dir
 /Users/wangxy/Documents/TinyRedis/cmake-build-debug/CMakeFiles/TinyRedis.dir
