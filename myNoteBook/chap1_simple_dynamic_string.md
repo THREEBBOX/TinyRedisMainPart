@@ -28,4 +28,4 @@ struct sdshdr{
 - 
 
 ##4.尚未完成/降低要求/存疑项
-
+- thread

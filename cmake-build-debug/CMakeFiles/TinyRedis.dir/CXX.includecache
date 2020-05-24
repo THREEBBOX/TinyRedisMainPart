@@ -14,12 +14,6 @@ sds.h
 string
 -
 
-/Users/wangxy/Documents/TinyRedis/sds.cpp
-sds.h
-/Users/wangxy/Documents/TinyRedis/sds.h
-iostream
--
-
 /Users/wangxy/Documents/TinyRedis/sds.h
 iostream
 -
