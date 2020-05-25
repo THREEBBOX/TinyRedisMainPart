@@ -126,12 +126,13 @@
 			<Option target="TinyRedis"/>
 		</Unit>
 		<Unit filename="/Users/wangxy/Documents/TinyRedis/sds.cpp">
-			<Option target="sds"/>
 			<Option target="TinyRedis"/>
 		</Unit>
 		<Unit filename="/Users/wangxy/Documents/TinyRedis/sds.h">
-			<Option target="sds"/>
 			<Option target="TinyRedis"/>
+		</Unit>
+		<Unit filename="/Users/wangxy/Documents/TinyRedis/test.cpp">
+			<Option target="sds"/>
 		</Unit>
 		<Unit filename="/Users/wangxy/Documents/TinyRedis/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

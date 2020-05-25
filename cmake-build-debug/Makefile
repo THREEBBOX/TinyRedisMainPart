@@ -169,7 +169,6 @@ sds.o: sds.cpp.o
 
 # target to build an object file
 sds.cpp.o:
-	$(MAKE) -f CMakeFiles/sds.dir/build.make CMakeFiles/sds.dir/sds.cpp.o
 	$(MAKE) -f CMakeFiles/TinyRedis.dir/build.make CMakeFiles/TinyRedis.dir/sds.cpp.o
 .PHONY : sds.cpp.o
 
@@ -179,7 +178,6 @@ sds.i: sds.cpp.i
 
 # target to preprocess a source file
 sds.cpp.i:
-	$(MAKE) -f CMakeFiles/sds.dir/build.make CMakeFiles/sds.dir/sds.cpp.i
 	$(MAKE) -f CMakeFiles/TinyRedis.dir/build.make CMakeFiles/TinyRedis.dir/sds.cpp.i
 .PHONY : sds.cpp.i
 
@@ -189,9 +187,35 @@ sds.s: sds.cpp.s
 
 # target to generate assembly for a file
 sds.cpp.s:
-	$(MAKE) -f CMakeFiles/sds.dir/build.make CMakeFiles/sds.dir/sds.cpp.s
 	$(MAKE) -f CMakeFiles/TinyRedis.dir/build.make CMakeFiles/TinyRedis.dir/sds.cpp.s
 .PHONY : sds.cpp.s
+
+test.o: test.cpp.o
+
+.PHONY : test.o
+
+# target to build an object file
+test.cpp.o:
+	$(MAKE) -f CMakeFiles/sds.dir/build.make CMakeFiles/sds.dir/test.cpp.o
+.PHONY : test.cpp.o
+
+test.i: test.cpp.i
+
+.PHONY : test.i
+
+# target to preprocess a source file
+test.cpp.i:
+	$(MAKE) -f CMakeFiles/sds.dir/build.make CMakeFiles/sds.dir/test.cpp.i
+.PHONY : test.cpp.i
+
+test.s: test.cpp.s
+
+.PHONY : test.s
+
+# target to generate assembly for a file
+test.cpp.s:
+	$(MAKE) -f CMakeFiles/sds.dir/build.make CMakeFiles/sds.dir/test.cpp.s
+.PHONY : test.cpp.s
 
 # Help Target
 help:
@@ -209,6 +233,9 @@ help:
 	@echo "... sds.o"
 	@echo "... sds.i"
 	@echo "... sds.s"
+	@echo "... test.o"
+	@echo "... test.i"
+	@echo "... test.s"
 .PHONY : help
 
 
