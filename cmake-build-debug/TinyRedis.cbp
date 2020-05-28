@@ -122,6 +122,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/wangxy/Documents/TinyRedis/adlist.cpp">
+			<Option target="TinyRedis"/>
+		</Unit>
+		<Unit filename="/Users/wangxy/Documents/TinyRedis/adlist.h">
+			<Option target="TinyRedis"/>
+		</Unit>
 		<Unit filename="/Users/wangxy/Documents/TinyRedis/main.cpp">
 			<Option target="TinyRedis"/>
 		</Unit>

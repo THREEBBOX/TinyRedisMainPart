@@ -136,6 +136,33 @@ TinyRedis/fast:
 	$(MAKE) -f CMakeFiles/TinyRedis.dir/build.make CMakeFiles/TinyRedis.dir/build
 .PHONY : TinyRedis/fast
 
+adlist.o: adlist.cpp.o
+
+.PHONY : adlist.o
+
+# target to build an object file
+adlist.cpp.o:
+	$(MAKE) -f CMakeFiles/TinyRedis.dir/build.make CMakeFiles/TinyRedis.dir/adlist.cpp.o
+.PHONY : adlist.cpp.o
+
+adlist.i: adlist.cpp.i
+
+.PHONY : adlist.i
+
+# target to preprocess a source file
+adlist.cpp.i:
+	$(MAKE) -f CMakeFiles/TinyRedis.dir/build.make CMakeFiles/TinyRedis.dir/adlist.cpp.i
+.PHONY : adlist.cpp.i
+
+adlist.s: adlist.cpp.s
+
+.PHONY : adlist.s
+
+# target to generate assembly for a file
+adlist.cpp.s:
+	$(MAKE) -f CMakeFiles/TinyRedis.dir/build.make CMakeFiles/TinyRedis.dir/adlist.cpp.s
+.PHONY : adlist.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -227,6 +254,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... sds"
 	@echo "... TinyRedis"
+	@echo "... adlist.o"
+	@echo "... adlist.i"
+	@echo "... adlist.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

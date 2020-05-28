@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/wangxy/Documents/TinyRedis/adlist.cpp" "/Users/wangxy/Documents/TinyRedis/cmake-build-debug/CMakeFiles/TinyRedis.dir/adlist.cpp.o"
   "/Users/wangxy/Documents/TinyRedis/main.cpp" "/Users/wangxy/Documents/TinyRedis/cmake-build-debug/CMakeFiles/TinyRedis.dir/main.cpp.o"
   "/Users/wangxy/Documents/TinyRedis/sds.cpp" "/Users/wangxy/Documents/TinyRedis/cmake-build-debug/CMakeFiles/TinyRedis.dir/sds.cpp.o"
   )

@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/TinyRedis.dir/adlist.cpp.o"
   "CMakeFiles/TinyRedis.dir/main.cpp.o"
   "CMakeFiles/TinyRedis.dir/sds.cpp.o"
   "TinyRedis"
