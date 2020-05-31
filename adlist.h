@@ -119,7 +119,7 @@ private:
     //check node whether in the list
     baseNode *checkNode(baseNode *node);
 
-    baseNode *head, *tail;
+    baseNode *head{}, *tail{};
     int length;
 };
 
